@@ -8,7 +8,7 @@ Thank you for considering contributing to Noosphere! This guide outlines how you
 
 ### 1. **Report Issues**
 If you encounter bugs, unexpected behavior, or have feature suggestions, please:
-- Open an issue in the [GitHub repository](https://github.com/your-username/noosphere/issues).
+- Open an issue in the [GitHub repository](https://github.com/kojibai/noosphere/issues).
 - Include detailed information such as:
   - Steps to reproduce the issue.
   - Expected and actual results.
@@ -94,7 +94,7 @@ We strive to create an inclusive and welcoming environment. By participating in 
 
 ## Community Support
 If you have questions or need guidance, feel free to:
-- Join our [Discussions](https://github.com/your-username/noosphere/discussions).
+- Join our [Discussions](https://github.com/kojibai/noosphere/discussions).
 - Contact the maintainers by tagging them in issues or pull requests.
 
 ---
