@@ -1,0 +1,27 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha",
+    "lint": "eslint .",
+    "debug": "node --inspect index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "chai-http": "^5.1.1",
+    "eslint": "^8.50.0",
+    "mocha": "^10.8.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
