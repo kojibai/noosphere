@@ -89,5 +89,5 @@ You can report bugs by opening an issue on our GitHub repository. Use the [Bug R
 
 ---
 
-For additional support, visit the [Noosphere Discussions](https://github.com/phinetwork/discussions) or contact the maintainers.
+For additional support, visit the [Noosphere Discussions](https://github.com/kojibai/discussions) or contact the maintainers.
 
