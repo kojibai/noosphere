@@ -13,31 +13,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
 
-      # Step 3: Navigate to the core directory and install dependencies
       - name: Install dependencies
         working-directory: core
-        run: |
-          npm install
+        run: npm install
 
-      # Step 4: Run the test suite
+      - name: Start AI Server
+        run: python3 ai/ai_server.py &
+
+      - name: Start Middleware
+        working-directory: core
+        run: npm start &
+
+      - name: Wait for services to start
+        run: sleep 10
+
       - name: Run Tests
         working-directory: core
-        run: |
-          npm test
+        run: npm test
 
-      # Step 5: Display test results on failure (optional)
-      - name: Show Logs on Failure
-        if: failure()
-        working-directory: core
-        run: |
-          cat npm-debug.log || echo "No debug log found."
+      - name: Debug Directory Structure
+        run: ls -R
